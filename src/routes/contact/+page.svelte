@@ -12,8 +12,21 @@
 <style lang="scss">
 	@import '../src/lib/basecamp';
 
+	body {
+		margin-top: 4rem;
+	}
+
 	img {
-		margin: 5%;
-		width: 90vw;
+		margin: 5% 20%;
+		width: 60vw;
+	}
+
+	@media only screen and (min-width: 780px) {
+		a {
+			img {
+				width: 40vw;
+				margin: 0 30%;
+			}
+		}
 	}
 </style>

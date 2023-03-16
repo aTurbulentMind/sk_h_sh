@@ -1,3 +1,21 @@
+<!--<script>
+	let items = [
+		{ name: 'Item 1', color: 'red' },
+		{ name: 'Item 2', color: 'green' },
+		{ name: 'Item 3', color: 'blue' },
+		{ name: 'Item 1', color: 'red' },
+		{ name: 'Item 2', color: 'green' },
+		{ name: 'Item 3', color: 'blue' }
+	];
+</script>
+
+<div class="grid">
+	{#each items as item}
+		<div class="item" style="background-color: {item.color}">
+			{item.name}
+		</div>
+	{/each}
+</div>-->
 <body>
 	<img class="face" src="img/test_1.jpg" alt="its my face" />
 
@@ -50,9 +68,13 @@
 	</p>
 </body>
 
-<!-- svelte-ignore css-unused-selector -->
+<!--svelte-ignore css-unused-selector -->
 <style lang="scss">
 	@import '../src/lib/basecamp';
+
+	body {
+		margin-top: 4rem;
+	}
 
 	img {
 		width: 80%;

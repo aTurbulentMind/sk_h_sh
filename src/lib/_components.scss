@@ -19,7 +19,7 @@
     grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 35px;
-    margin: 0 5%;
+    margin: 0 10% 0 5%;
 }
 
 @mixin butts() {
@@ -87,6 +87,11 @@ button {
     gap: $marg_xxl;
     align-items: center;
 
+    @media (min-width: 780px) {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: $pad_xxl;
+    }
+
     .card {
         padding: 15px;
         margin: 0 7%;
@@ -100,15 +105,12 @@ button {
                 .card {
                     padding: 20px;
                     margin: 0 12%;
+                    margin-left: 5vw;
                 }
             }
         }
     }
 
-    @media (min-width: 780px) {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: $pad_xxl;
-    }
 }
 
 //form

@@ -18,28 +18,26 @@
 	});
 </script>
 
-<div class="grid">
-	<div class="card">
-		<header class="card-title"><h2>{product.name}</h2></header>
-		<img src={product.image} alt="" />
-		<div class="body">
-			{#if cartProduct !== undefined}
-				<div>
-					Quantity: <strong>{cartProduct.quantity}</strong>
-				</div>
-			{/if}
-			<div class="info">
-				Info: {product.info}
-			</div>
+<div>
+	<h2 class="card-title">{product.name}</h2>
+	<img src={product.image} alt="" />
+	<div class="body">
+		{#if cartProduct !== undefined}
 			<div>
-				Price: ${product.price}
+				Quantity: <strong>{cartProduct.quantity}</strong>
 			</div>
-			<div class="colors">Colors: {product.colors}</div>
-			<footer>
-				<button on:click={() => addToCart(product.id)}>Add</button>
-				<button on:click={() => removeFromCart(product.id)}>Remove</button>
-			</footer>
+		{/if}
+		<div class="info">
+			Info: {product.info}
 		</div>
+		<div>
+			Price: ${product.price}
+		</div>
+		<div class="colors">Colors: {product.colors}</div>
+		<footer>
+			<button on:click={() => addToCart(product.id)}>Add</button>
+			<button on:click={() => removeFromCart(product.id)}>Remove</button>
+		</footer>
 	</div>
 </div>
 

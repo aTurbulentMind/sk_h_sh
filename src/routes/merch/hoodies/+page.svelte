@@ -8,18 +8,18 @@
 
 	const products: Product[] = [
 		{
+			id: 'price_1MlEGnBVmXelB3TrHOu7K6rv',
+			name: 'Tacoma Love',
+			price: 25,
+			image: '../img/test_3.jpg',
+			info: 'Home',
+			colors: colors
+		},
+		{
 			id: 'price_1MlEF9BVmXelB3TrbtxiGhAZ',
 			name: 'The Classic',
 			price: 25,
 			image: '../img/test_2.jpg',
-			info: 'The classic T',
-			colors: Pu
-		},
-		{
-			id: 'price_1MlEFoBVmXelB3TrmWXGNXur',
-			name: 'Hilltop',
-			price: 25,
-			image: '../img/test_o.jpg',
 			info: 'The classic T',
 			colors: Pu
 		},
@@ -32,17 +32,17 @@
 			colors: colors
 		},
 		{
-			id: 'price_1MlEGnBVmXelB3TrHOu7K6rv',
-			name: 'Tacoma Love',
+			id: 'price_1MlEFoBVmXelB3TrmWXGNXur',
+			name: 'Hilltop',
 			price: 25,
-			image: '../img/test_3.jpg',
-			info: 'Home',
-			colors: colors
+			image: '../img/test_o.jpg',
+			info: 'The classic T',
+			colors: Pu
 		}
 	];
 
 	async function checkout() {
-		await fetch('/src/routes/api/stripeCheckout', {
+		await fetch('api/stripeCheckout', {
 			// http://localhost:5173/api/stripeCheckout
 			method: 'POST',
 			headers: {

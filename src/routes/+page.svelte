@@ -1,7 +1,8 @@
 <body>
 	<div class="art-banner" id="art-banner">
-		<div class="banner-text">Sky High Clothing</div>
-		<div class="banner-phrase">"words"</div>
+		<!--  <div class="banner-text">Sky High Clothing</div>
+		<div class="banner-phrase">"words"</div>-->
+		<div class="coaButt"><a href="/merch/">SHOP <br /> NOW</a></div>
 	</div>
 
 	<!--welcome info-->
@@ -21,7 +22,7 @@ fdfeibwh-->
 		in, we've got you covered. Come on in and let us help you find your new favorite piece!
 	</p>
 
-	<img class="full_img" src="img/test_1.jpg" alt="its my face" />
+	<img class="room" src="img/test_1.jpg" alt="its my face" />
 
 	<p>
 		And with a wide range of sizes and styles available, there's something for everyone at our
@@ -75,6 +76,7 @@ fdfeibwh-->
 	body {
 		overflow-x: hidden;
 		z-index: 999;
+		margin-top: 4rem;
 	}
 
 	//entry banner
@@ -82,11 +84,11 @@ fdfeibwh-->
 	.art-banner {
 		height: 100vh;
 		display: grid;
-		background-image: url(/img/logo.jpg);
+		background-image: url(/img/logo_tall.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
-		background-size: 100vw;
+		background-size: 100vh;
 		grid-template-columns: 20px 1fr 1fr 1fr 20px;
 		grid-template-rows: 20px 1fr 1fr 1fr 20px;
 		margin: 5px 0 0 5px;
@@ -95,22 +97,6 @@ fdfeibwh-->
 		a {
 			font-size: 3vw;
 			z-index: 950;
-		}
-	}
-
-	.art-banner-bg {
-		background-image: url(/img/banner.png);
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center;
-		background-size: 100%;
-		grid-column: 1 / -1;
-		grid-row: 1 / -1;
-
-		z-index: 950;
-
-		img {
-			width: 105%;
 		}
 	}
 
@@ -147,19 +133,29 @@ fdfeibwh-->
 		display: grid;
 		align-self: center;
 		justify-self: center;
+		text-align: center;
 		grid-column: 4;
-		grid-row: 4;
-		margin: 10%;
+		grid-row: 2;
 		width: fit-content;
-		border-radius: 10px;
+		border-radius: 3px;
 		z-index: 950;
 		padding: 2%;
-		background-color: rgba(10, 3, 14, 0.166);
+		background-color: $backHallow;
+		text-decoration: underline $extra;
 
-		svg {
-			width: 20px;
-			height: 20px;
-			z-index: 950;
+		&:hover {
+			transition: all $tSpeed ease-in-out;
+			background: $grabber;
+			color: $backMain;
+			box-shadow: $mainShadow;
+			transform: scale(1.1);
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		a {
+			font-size: $f-xl;
+			padding: 1vw;
 		}
 	}
 
@@ -167,34 +163,20 @@ fdfeibwh-->
 		border-radius: 0;
 	}
 
+	.butt {
+		margin: 5% auto;
+	}
+
 	@media (max-width: 768px) {
 		.art-banner {
 			grid-template-columns: 20px 1fr 1fr 1fr 60px;
 			grid-template-rows: 20px 1fr 1fr 1fr 70px;
 		}
-
-		.butt {
-			position: relative;
-			margin-left: 25vw;
-		}
-
-		.coaButt {
-			grid-column: 1;
-			grid-row: 4;
-			width: 10vw;
-
-			a {
-				margin: 2%;
-			}
-		}
 	}
 
 	@media only screen and (min-width: 780px) {
-		.coaButt {
-			svg {
-				width: 25px;
-				height: 25px;
-			}
+		.room {
+			margin-left: 20vw;
 		}
 	}
 </style>
