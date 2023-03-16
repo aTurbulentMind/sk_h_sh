@@ -7,8 +7,6 @@
 
 	<!--welcome info-->
 
-	
-
 	<h1>Hello, thank you for stopping in.</h1>
 	<p>
 		Welcome to Sky High Clothing, your friendly neighborhood clothing store in the heart of Tacoma,

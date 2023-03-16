@@ -8,6 +8,8 @@ declare global {
 		// interface Platform {}
 	}
 
+//these are the variables for the products
+
 class Product {
 	id: string
 	name: string
@@ -16,6 +18,8 @@ class Product {
 	info: string
 	colors: variable
 }
+	
+	// this is the vari for the cart
 
 	class CartItem {
 		id: string
