@@ -7,8 +7,7 @@
 
 	<!--welcome info-->
 
-	<!--
-fdfeibwh-->
+	
 
 	<h1>Hello, thank you for stopping in.</h1>
 	<p>
