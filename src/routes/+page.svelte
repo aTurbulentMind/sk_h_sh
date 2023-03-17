@@ -60,6 +60,21 @@
 </script>
 
 <body>
+	<div class="grid">
+		{#each products as product}
+			<div class="card"><ProductCard {product} /></div>
+		{/each}
+	</div>
+
+	<div class="button">
+		<button on:click={() => checkout()}>checkout</button>
+	</div>
+	<div class="art-banner" id="art-banner">
+		<!--  <div class="banner-text">Sky High Clothing</div>
+		<div class="banner-phrase">"words"</div>-->
+		<div class="coaButt"><a href="/merch/">SHOP <br /> NOW</a></div>
+	</div>
+
 	<!--welcome info-->
 
 	<h1>Hello, thank you for stopping in.</h1>
