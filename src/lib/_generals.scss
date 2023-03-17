@@ -1,0 +1,98 @@
+/* reset styles */
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: $mainFont;
+}
+
+:global(body) {
+    margin-top: 35px;
+}
+
+body {
+    background: $backMain;
+    background-size: 100%;
+    color: $textMain;
+    overflow-x: hidden;
+    width: 100vw;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+    color: $highlight;
+    font-weight: 500;
+    z-index: 10;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        color: $extra;
+        transform: scale(1.1);
+        cursor: pointer;
+        text-shadow: $text-shadow;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: $full_marg;
+    z-index: 10;
+}
+
+h1 {
+    font-size: $f-xl;
+}
+
+
+
+
+h2 {
+    font-size: $f-lg;
+
+    a {
+        margin: 0 20%;
+    }
+}
+
+h3 {
+    font-size: $f-lg;
+}
+
+p {
+    font-size: $font;
+}
+
+
+img {
+    max-width: 100%;
+    z-index: 10;
+    border-radius: $rad;
+}
+
+video {
+    max-width: 100%;
+    z-index: 10;
+}
+
+.vid {
+    width: 90vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    z-index: 10;
+}
+
+.altFont {
+    font-family: $secondaryFont;
+    font-weight: 400;
+}
