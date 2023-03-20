@@ -7,21 +7,21 @@
 <body>
 	<div class="art-banner" id="art-banner">
 		<div class="banner_img">
-			<img src="/img/test_o.jpg/" alt="" />
+			<img src="/img/test_o.jpg" alt="" />
 			<a href="/merch/" style="font-size: 5vw;">Shop</a>
 		</div>
 		<div class="banner_img">
-			<img src="/img/test_o.jpg/" alt="" />
+			<img src="/img/test_o.jpg" alt="" />
 			<a href="/merch/" style="font-size: 5vw;">New</a>
 		</div>
 		<div class="banner_img">
-			<img src="/img/test_o.jpg/" alt="" /> <a href="/merch/" style="font-size: 5vw;">Hoodies</a>
+			<img src="/img/test_o.jpg" alt="" /> <a href="/merch/" style="font-size: 5vw;">Hoodies</a>
 		</div>
 		<div class="banner_img">
-			<img src="/img/test_o.jpg/" alt="" /> <a href="/merch/" style="font-size: 5vw;">Shirts</a>
+			<img src="/img/test_o.jpg" alt="" /> <a href="/merch/" style="font-size: 5vw;">Shirts</a>
 		</div>
 		<div class="banner_img">
-			<img src="/img/test_o.jpg/" alt="" /> <a href="/merch/" style="font-size: 5vw;">Pants</a>
+			<img src="/img/test_o.jpg" alt="" /> <a href="/merch/" style="font-size: 5vw;">Pants</a>
 		</div>
 
 		<div class="banner_img">
