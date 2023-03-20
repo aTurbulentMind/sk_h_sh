@@ -1,0 +1,130 @@
+@media (max-width: 768px) {}
+
+
+@media (min-width: 780px) {
+
+    body {
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        margin: $half_marg;
+    }
+
+    h1 {
+        font-size: $f-xl;
+    }
+
+    h2 {
+        font-size: $f-lg;
+    }
+
+    h3,
+    a {
+        font-size: $font;
+    }
+
+    p {
+        font-size: $f-sm;
+    }
+
+
+
+    .social {
+
+        img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+
+    .vid {
+        width: 93vw;
+        height: 100vh;
+    }
+
+    //banner page
+    .art-banner {
+        .banner-text {
+            padding-top: $pad;
+            font-size: $f-xxxl;
+        }
+
+        .form {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .soc {
+            grid-column: 3;
+            width: 18vw;
+        }
+    }
+
+    //review block
+    .reviews {
+        card {
+            margin-right: 14%;
+        }
+    }
+
+    .butt {
+        margin: 0 25%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        margin: $lg_marg;
+    }
+
+    h1 {
+        font-size: $f-xxl;
+    }
+
+    h2 {
+        font-size: $f-xl;
+    }
+
+    h3,
+    a {
+        font-size: $f-lg;
+    }
+
+    p {
+        font-size: $font;
+    }
+
+
+    .butt {
+        margin: 0 25%;
+    }
+
+    //review block
+    .reviews {
+        margin-top: -2%;
+    }
+
+    .art-banner {
+        .soc {
+            grid-column: 5;
+            grid-row: 5;
+            margin: $marg_xl;
+        }
+    }
+
+    .footer {
+        margin-bottom: -25%;
+    }
+
+    /**/
+}
