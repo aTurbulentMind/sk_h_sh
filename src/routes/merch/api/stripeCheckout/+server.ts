@@ -4,7 +4,7 @@ import {
 import type { RequestHandler } from "./$types";
 import Stripe from 'stripe';
 
-const SECRET_API_KEY = 'sk_test_51MlE8TBVmXelB3TriCuhkz1MhRSI1p8xFq0Fj8KW3gPLholfL1xf0iDXk8qNJTXtPPrW4CHXNOSyKSKljujB0lD300jigFiB8l';
+const SECRET_API_KEY = API_KEY;
 const stripe = new Stripe(SECRET_API_KEY, {
     apiVersion: "2022-11-15"
 });
